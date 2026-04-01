@@ -90,6 +90,13 @@
             max-width: 900px;
         }
         
+        .hero-logo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 40px;
+            filter: brightness(0) invert(1);
+        }
+        
         .hero h1 {
             font-size: 64px;
             font-weight: 200;
@@ -378,6 +385,12 @@
         
         /* Mobile */
         @media (max-width: 768px) {
+            .hero-logo {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 30px;
+            }
+            
             .hero h1 {
                 font-size: 36px;
                 letter-spacing: 4px;
@@ -432,6 +445,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
+            <img src="blk-logo.png" alt="The BLK Group" class="hero-logo">
             <h1>30 Day Listings</h1>
             <p class="subtitle">As Low As 3% Total Commission</p>
             <p class="tagline">No 6-Month Contracts. No Cancellation Fees.</p>
