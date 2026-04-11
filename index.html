@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>30 Day Listing Strategy - Sell Your Home Fast | The BLK Group</title>
-    <meta name="description" content="Sell your home in 30 days or walk away. No 6-month contract. 3% commission. Real marketing. Real results. Only 15 spots per month.">
+    <title>Sell Your Home in 30 Days | The BLK Group at LPT Realty</title>
+    <meta name="description" content="Don't commit to 6 months. Give us 30 days to sell your home or walk away. No long-term contract. 3% commission. 1000+ homes sold.">
     <link rel="canonical" href="https://30daylistingstrategy.com">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sell Your Home in 30 Days | The BLK Group">
+    <meta property="og:description" content="Only taking 15 new listings per month. 30 days. 3% commission. No long-term contract.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://30daylistingstrategy.com">
+    <meta property="og:image" content="https://30daylistingstrategy.com/og-image.jpg">
     
     <style>
         * {
@@ -21,6 +28,7 @@
             line-height: 1.6;
         }
         
+        /* LPT Banner */
         .lpt-banner {
             position: fixed;
             top: 0;
@@ -37,6 +45,7 @@
             height: 50px;
         }
         
+        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -44,6 +53,92 @@
             justify-content: center;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://theblk.group/parallax-1-new.jpg') center center/cover fixed;
             padding: 100px 20px 60px;
+            position: relative;
+        }
+        
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .scroll-indicator p {
+            color: #B8960C;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .chevrons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .chevron {
+            position: relative;
+            width: 28px;
+            height: 8px;
+            opacity: 0;
+            transform: scale(0.3);
+            animation: move-chevron 3s ease-out infinite;
+        }
+        
+        .chevron:first-child {
+            animation-delay: 0s;
+        }
+        
+        .chevron:nth-child(2) {
+            animation-delay: 0.15s;
+        }
+        
+        .chevron:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .chevron:before,
+        .chevron:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            background: #B8960C;
+        }
+        
+        .chevron:before {
+            left: 0;
+            transform: skewY(30deg);
+        }
+        
+        .chevron:after {
+            right: 0;
+            width: 50%;
+            transform: skewY(-30deg);
+        }
+        
+        @keyframes move-chevron {
+            25% {
+                opacity: 1;
+            }
+            33.3% {
+                opacity: 1;
+                transform: translateY(2.28rem);
+            }
+            66.6% {
+                opacity: 1;
+                transform: translateY(3.12rem);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(4.8rem) scale(0.5);
+            }
         }
         
         .hero-container {
@@ -79,6 +174,7 @@
             margin-bottom: 30px;
         }
         
+        /* Social Proof Bar */
         .social-proof {
             display: flex;
             gap: 30px;
@@ -127,6 +223,7 @@
             font-weight: 500;
         }
         
+        /* Form Card */
         .form-card {
             background: #fff;
             padding: 40px;
@@ -235,6 +332,7 @@
             margin-top: 5px;
         }
         
+        /* Success Message */
         .success-message {
             display: none;
             background: #4CAF50;
@@ -246,6 +344,7 @@
             font-weight: 600;
         }
         
+        /* Why Section */
         .why-section {
             padding: 80px 20px;
             background: #111;
@@ -375,6 +474,7 @@
             color: #8B7209;
         }
         
+        /* Footer */
         .footer {
             padding: 40px 20px;
             text-align: center;
@@ -387,6 +487,7 @@
             font-size: 14px;
         }
         
+        /* Mobile */
         @media (max-width: 768px) {
             .hero-container {
                 grid-template-columns: 1fr;
@@ -432,23 +533,31 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
             }
+            
+            .scroll-indicator {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- LPT Banner -->
     <div class="lpt-banner">
         <img src="https://theblk.group/lpt-logo.jpg" alt="LPT Realty">
     </div>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
+            <!-- Left: Content -->
             <div class="hero-content">
                 <img src="https://theblk.group/blk-logo.png" alt="The BLK Group" class="logo">
                 
-                <h1>Sell Your Home<br>in 30 Days.<br>Or Walk Away.</h1>
+                <h1>Want to Sell Your House?<br>Don't Commit to 6 Months.<br>Give Us 30 Days.</h1>
                 
-                <p class="headline-sub">Or You Walk Away. No 6-Month Contract, No Cancellation Fees.</p>
+                <p class="headline-sub">Real Marketing. Real Results. Or You Walk Away. No Long-Term Contract.</p>
                 
+                <!-- Social Proof -->
                 <div class="social-proof">
                     <div class="proof-item">
                         <span class="proof-number">1000+</span>
@@ -464,22 +573,24 @@
                     </div>
                 </div>
                 
+                <!-- Benefits -->
                 <div class="benefits">
                     <div class="benefit">
                         <span class="benefit-icon">✓</span>
-                        <span class="benefit-text">Aggressive marketing plan</span>
+                        <span class="benefit-text">Real marketing, not just MLS</span>
                     </div>
                     <div class="benefit">
                         <span class="benefit-icon">✓</span>
-                        <span class="benefit-text">Weekly updates</span>
+                        <span class="benefit-text">Weekly updates, no ghosting</span>
                     </div>
                     <div class="benefit">
                         <span class="benefit-icon">✓</span>
-                        <span class="benefit-text">30 days. No long-term trap.</span>
+                        <span class="benefit-text">30-day agreement, no long-term trap</span>
                     </div>
                 </div>
             </div>
             
+            <!-- Right: Form -->
             <div class="form-card">
                 <h2>Get Your Free Strategy Call</h2>
                 
@@ -512,30 +623,415 @@
                 <div class="sms-cta">
                     <p>Prefer to text?</p>
                     <span class="sms-number">(479) 857-5994</span>
-                    <p class="sms-code">Text "30DAY" for details</p>
+                    <p class="sms-code">Text "EXPIRED" for details</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})">
+            <p>Scroll Down</p>
+            <div class="chevrons">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Agitation Section -->
+    <section style="padding: 80px 20px; background: #111;">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 42px; color: #B8960C; margin-bottom: 30px; font-weight: 300;">Let's Be Honest About Most Realtors...</h2>
+            
+            <p style="font-size: 20px; line-height: 1.8; color: #ccc; margin-bottom: 25px;">
+                Most agents want 6-month commitments with high cancellation fees. They make it sound like they sell a ton of houses, but they may have only sold 3-5 last year. They have no real marketing strategy beyond throwing your home on the MLS and hoping for the best.
+            </p>
+            
+            <p style="font-size: 20px; line-height: 1.8; color: #ccc; margin-bottom: 25px;">
+                Most sellers wind up waiting. And waiting. And waiting. And nothing happens.
+            </p>
+            
+            <p style="font-size: 20px; line-height: 1.8; color: #ccc; margin-bottom: 25px;">
+                Maybe you get a few showings in the first couple weeks. Then... crickets. The listing goes stale after sitting for 100+ days on the market. Buyers start to think "there must be something wrong with that house." At best, you're positioned to get a lowball offer. At worst, you're stuck in a contract you can't escape.
+            </p>
+            
+            <p style="font-size: 20px; line-height: 1.8; color: #ccc; margin-bottom: 25px;">
+                Meanwhile, your life is on hold. You can't move. Can't plan. Can't do anything but wait for a contract that may never come. Your agent stops calling. Stops updating you. And you're left in the dark wondering what went wrong.
+            </p>
+            
+            <p style="font-size: 24px; line-height: 1.8; color: #fff; font-weight: 600; margin-top: 40px; margin-bottom: 30px;">
+                Sound familiar? You're not alone. This is the reality for thousands of sellers every year.
+            </p>
+            
+            <p style="font-size: 20px; line-height: 1.8; color: #ccc; margin-bottom: 15px;">
+                But it doesn't have to be this way.
+            </p>
+            
+            <p style="font-size: 20px; line-height: 1.8; color: #ccc; margin-bottom: 15px;">
+                What if you didn't have to commit to 6 months of uncertainty?
+            </p>
+            
+            <p style="font-size: 20px; line-height: 1.8; color: #ccc; margin-bottom: 40px;">
+                What if you could work with a team that's actually sold 1000+ homes, has a proven 30-day marketing system, and doesn't trap you in long-term contracts?
+            </p>
+            
+            <p style="font-size: 26px; line-height: 1.6; color: #B8960C; font-weight: 600; margin-top: 40px;">
+                That's exactly what we offer. And we're only taking 15 new listings per month.
+            </p>
+        </div>
+    </section>
+
+    <!-- Authority Section -->
+    <section style="padding: 80px 20px; background: #000;">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <h2 style="font-size: 42px; color: #B8960C; margin-bottom: 50px; text-align: center; font-weight: 300;">What Makes Us Different</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 25px; margin-bottom: 50px;">
+                <div style="text-align: center; padding: 25px; background: #1a1a1a; border-radius: 8px;">
+                    <div style="font-size: 44px; color: #B8960C; font-weight: 700; margin-bottom: 10px;">1000+</div>
+                    <div style="color: #ccc; font-size: 14px; line-height: 1.4;">Homes Sold</div>
+                </div>
+                <div style="text-align: center; padding: 25px; background: #1a1a1a; border-radius: 8px;">
+                    <div style="font-size: 44px; color: #B8960C; font-weight: 700; margin-bottom: 10px;">#1</div>
+                    <div style="color: #ccc; font-size: 14px; line-height: 1.4;">Team 2025</div>
+                </div>
+                <div style="text-align: center; padding: 25px; background: #1a1a1a; border-radius: 8px;">
+                    <div style="font-size: 44px; color: #B8960C; font-weight: 700; margin-bottom: 10px;">💎</div>
+                    <div style="color: #ccc; font-size: 14px; line-height: 1.4;">$30M+ Pinnacle Diamond 2025</div>
+                </div>
+                <div style="text-align: center; padding: 25px; background: #1a1a1a; border-radius: 8px;">
+                    <div style="font-size: 44px; color: #B8960C; font-weight: 700; margin-bottom: 10px;">35+</div>
+                    <div style="color: #ccc; font-size: 14px; line-height: 1.4;">Years Combined Experience</div>
+                </div>
+                <div style="text-align: center; padding: 25px; background: #1a1a1a; border-radius: 8px;">
+                    <div style="font-size: 44px; color: #B8960C; font-weight: 700; margin-bottom: 10px;">🏆</div>
+                    <div style="color: #ccc; font-size: 14px; line-height: 1.4;">Voted Best Realtors by Soiree 2025</div>
+                </div>
+            </div>
+            
+            <p style="font-size: 20px; line-height: 1.8; color: #ccc; text-align: center; max-width: 800px; margin: 0 auto;">
+                We didn't become the #1 team in Central Arkansas for homes sold by crossing our fingers. We got here by selling homes when other agents couldn't. By doing what others won't. By challenging the status quo. By treating every listing like it's our own.
+            </p>
+        </div>
+    </section>
+
+    <!-- The 30 Day Difference Section -->
+    <section style="padding: 80px 20px; background: #0a0a0a;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="font-size: 42px; color: #B8960C; margin-bottom: 20px; text-align: center; font-weight: 300;">Here's What You Get With Our 30 Day Strategy</h2>
+            <p style="font-size: 18px; color: #888; text-align: center; margin-bottom: 50px;">This isn't just a listing. It's a full-scale marketing campaign built around YOUR property.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">🎯</div>
+                    <h3 style="font-size: 22px; color: #B8960C; margin-bottom: 15px;">Custom Tailored Marketing Strategy</h3>
+                    <p style="color: #ccc; font-size: 16px; line-height: 1.7;">Not a cookie-cutter approach. We build a marketing plan specifically for YOUR property, YOUR neighborhood, and YOUR target buyer. Every home is different. Every strategy should be too.</p>
+                </div>
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">📸</div>
+                    <h3 style="font-size: 22px; color: #B8960C; margin-bottom: 15px;">Professional Photography & Videography</h3>
+                    <p style="color: #ccc; font-size: 16px; line-height: 1.7;">Twilight shots that make your home glow. Drone footage for acreage and unique properties. Walk-through videos that let buyers fall in love before they ever step foot inside.</p>
+                </div>
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">📮</div>
+                    <h3 style="font-size: 22px; color: #B8960C; margin-bottom: 15px;">Direct Mail & Physical Marketing</h3>
+                    <p style="color: #ccc; font-size: 16px; line-height: 1.7;">Premium postcards, neighborhood door hangers, and targeted direct mail campaigns to get your listing in front of neighbors and potential buyers who might not be searching online. Physical presence matters.</p>
+                </div>
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">📱</div>
+                    <h3 style="font-size: 22px; color: #B8960C; margin-bottom: 15px;">Social Media Blitz</h3>
+                    <p style="color: #ccc; font-size: 16px; line-height: 1.7;">Organic posts PLUS paid Facebook & Instagram ads targeted to active buyers in your area. Your listing gets in front of 100,000+ extra eyeballs in the first 30 days. Real ad spend. Real reach.</p>
+                </div>
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">🌐</div>
+                    <h3 style="font-size: 22px; color: #B8960C; margin-bottom: 15px;">Custom Listing Website</h3>
+                    <p style="color: #ccc; font-size: 16px; line-height: 1.7;">Your home gets its own premium website (like theblk.group/listings/your-address) with gallery, virtual tour, and scheduling. Not just another MLS listing. A complete digital showcase.</p>
+                </div>
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">📊</div>
+                    <h3 style="font-size: 22px; color: #B8960C; margin-bottom: 15px;">Weekly 1-on-1 Deep-Dive Updates</h3>
+                    <p style="color: #ccc; font-size: 16px; line-height: 1.7;">Every week, you get a deep-dive email and call from us. We tell you exactly where we stand in getting the offer you're looking for, how the listing is performing, and what we need to do to keep the momentum going. No guessing. Total transparency.</p>
+                </div>
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">💬</div>
+                    <h3 style="font-size: 22px; color: #B8960C; margin-bottom: 15px;">24/7 Access to Your Agents</h3>
+                    <p style="color: #ccc; font-size: 16px; line-height: 1.7;">Text us at 11pm with a question? We'll answer. Need an update on a Saturday? Call us. You're never left in the dark wondering what's happening with your biggest asset.</p>
+                </div>
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">👥</div>
+                    <h3 style="font-size: 22px; color: #B8960C; margin-bottom: 15px;">2 Agents Working Full Time</h3>
+                    <p style="color: #ccc; font-size: 16px; line-height: 1.7;">You don't get one part-time agent juggling 30 listings. You get TWO full-time agents focused on selling YOUR home. Double the effort. Double the attention. Double the results.</p>
+                </div>
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">🏠</div>
+                    <h3 style="font-size: 22px; color: #B8960C; margin-bottom: 15px;">Regularly Scheduled Open Houses</h3>
+                    <p style="color: #ccc; font-size: 16px; line-height: 1.7;">We bring qualified buyers through your door, not just curious neighbors. Real feedback from real buyers helps us price and position your home for the fastest sale. Open houses mean offers, not just visitors.</p>
+                </div>
+                
+            </div>
+            
+            <p style="font-size: 24px; color: #B8960C; text-align: center; margin-top: 50px; font-weight: 600;">
+                That's not a listing. That's a full-scale marketing operation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section style="padding: 80px 20px; background: #000;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="font-size: 42px; color: #B8960C; margin-bottom: 50px; text-align: center; font-weight: 300;">Them vs. Us</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div style="background: #1a1a1a; padding: 40px; border-radius: 8px; border: 1px solid #333;">
+                    <h3 style="font-size: 24px; color: #ff4444; margin-bottom: 30px; text-align: center;">❌ Traditional Agents</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #ff4444;">✗</span>
+                            6-month contract (whether you sell or not)
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #ff4444;">✗</span>
+                            5-6% commission split
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #ff4444;">✗</span>
+                            "Set it and forget it" MLS listing
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #ff4444;">✗</span>
+                            Sporadic communication
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #ff4444;">✗</span>
+                            No real marketing budget
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #ff4444;">✗</span>
+                            You're stuck even if nothing happens
+                        </li>
+                    </ul>
+                </div>
+                
+                <div style="background: #1a1a1a; padding: 40px; border-radius: 8px; border: 2px solid #B8960C;">
+                    <h3 style="font-size: 24px; color: #B8960C; margin-bottom: 30px; text-align: center;">✓ The BLK Group</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #B8960C;">✓</span>
+                            30-day agreement (results or you walk)
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #B8960C;">✓</span>
+                            3% commission (save thousands)
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #B8960C;">✓</span>
+                            Aggressive multi-channel marketing
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #B8960C;">✓</span>
+                            Weekly updates every Monday
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #B8960C;">✓</span>
+                            Real ad spend on YOUR home
+                        </li>
+                        <li style="color: #ccc; font-size: 17px; margin-bottom: 20px; padding-left: 30px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #B8960C;">✓</span>
+                            Zero risk, zero long-term trap
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Social Proof / Results Section -->
+    <section style="padding: 80px 20px; background: #111;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h2 style="font-size: 42px; color: #B8960C; margin-bottom: 50px; text-align: center; font-weight: 300;">Real Results from Real Sellers</h2>
+            
+            <div style="background: #1a1a1a; padding: 40px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #B8960C;">
+                <p style="font-size: 18px; line-height: 1.8; color: #ccc; font-style: italic; margin-bottom: 20px;">
+                    "My house sat on the market for 4 months with my previous agent. Within 3 weeks of listing with The BLK Group, I had multiple offers. Brandon's marketing strategy actually works."
+                </p>
+                <p style="color: #B8960C; font-weight: 600;">— Sarah M., Little Rock</p>
+            </div>
+            
+            <div style="background: #1a1a1a; padding: 40px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #B8960C;">
+                <p style="font-size: 18px; line-height: 1.8; color: #ccc; font-style: italic; margin-bottom: 20px;">
+                    "I was skeptical about the 30-day program, but I was desperate. They sold my home in 21 days for MORE than what I was originally asking. I should have called them first."
+                </p>
+                <p style="color: #B8960C; font-weight: 600;">— Michael T., Conway</p>
+            </div>
+            
+            <div style="background: #1a1a1a; padding: 40px; border-radius: 8px; border-left: 4px solid #B8960C;">
+                <p style="font-size: 18px; line-height: 1.8; color: #ccc; font-style: italic; margin-bottom: 20px;">
+                    "After my listing expired, I thought I'd have to drop the price drastically. The BLK Group showed me a better way. Real marketing. Weekly updates. And a sale in 28 days at full price."
+                </p>
+                <p style="color: #B8960C; font-weight: 600;">— Jennifer K., Bryant</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ / Objection Handling -->
+    <section style="padding: 80px 20px; background: #111;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h2 style="font-size: 42px; color: #B8960C; margin-bottom: 50px; text-align: center; font-weight: 300;">Common Questions</h2>
+            
+            <div style="margin-bottom: 30px;">
+                <h3 style="font-size: 22px; color: #fff; margin-bottom: 15px;">What if my house doesn't sell in 30 days?</h3>
+                <p style="color: #ccc; font-size: 17px; line-height: 1.8;">You walk away. No penalties. No fees. No long-term commitment. We don't believe in trapping sellers in contracts that aren't working.</p>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <h3 style="font-size: 22px; color: #fff; margin-bottom: 15px;">Why only 3% commission instead of 5-6%?</h3>
+                <p style="color: #ccc; font-size: 17px; line-height: 1.8;">Because we do the volume. We'd rather help more sellers and make our profit on quantity, not gouging individual sellers.</p>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <h3 style="font-size: 22px; color: #fff; margin-bottom: 15px;">What makes you different from the agent I already had?</h3>
+                <p style="color: #ccc; font-size: 17px; line-height: 1.8;">We actually market your home. Facebook ads. Instagram campaigns. Direct mail. Custom websites. Weekly updates. Real work. Not hope.</p>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <h3 style="font-size: 22px; color: #fff; margin-bottom: 15px;">What if I already lowered my price and it still didn't sell?</h3>
+                <p style="color: #ccc; font-size: 17px; line-height: 1.8;">Price isn't always the problem. Marketing is. We've sold "overpriced" homes because we got them in front of the RIGHT buyers. Not just any buyers.</p>
+            </div>
+            
+            <div>
+                <h3 style="font-size: 22px; color: #fff; margin-bottom: 15px;">How quickly can we get started?</h3>
+                <p style="color: #ccc; font-size: 17px; line-height: 1.8;">This week. Fill out the form above or call us at (479) 857-5994. We'll come by, walk the home, and have a marketing plan ready, get photographers out to the house, and have you up and running within 48 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section style="padding: 80px 20px; background: #000; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 48px; color: #B8960C; margin-bottom: 30px; font-weight: 300;">Don't Settle for Less</h2>
+            <p style="font-size: 22px; line-height: 1.8; color: #ccc; margin-bottom: 40px;">
+                6 months with a sub-par strategy? Or 30 days with the #1 team in Central Arkansas?
+            </p>
+            <p style="font-size: 20px; color: #fff; margin-bottom: 40px;">
+                Fill out the form below or call/text us now: <a href="tel:+14798575994" style="color: #B8960C; text-decoration: none; font-weight: 700;">(479) 857-5994</a>
+            </p>
+            
+            <!-- Form -->
+            <form id="final-cta-form" style="background: #1a1a1a; padding: 40px; border-radius: 12px; margin: 0 auto 40px; max-width: 500px; text-align: left;">
+                <div style="margin-bottom: 20px;">
+                    <input type="text" id="final-name" placeholder="Your Name" required 
+                           style="width: 100%; padding: 15px; font-size: 16px; border: 1px solid #444; border-radius: 6px; background: #0a0a0a; color: #fff;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <input type="tel" id="final-phone" placeholder="Your Phone Number" required 
+                           style="width: 100%; padding: 15px; font-size: 16px; border: 1px solid #444; border-radius: 6px; background: #0a0a0a; color: #fff;">
+                </div>
+                <button type="submit" 
+                        style="width: 100%; padding: 18px; font-size: 18px; font-weight: 700; background: #B8960C; color: #000; border: none; border-radius: 6px; cursor: pointer; transition: all 0.3s;">
+                    Get Your Free Marketing Plan
+                </button>
+                <p style="font-size: 13px; color: #888; text-align: center; margin-top: 15px;">No spam. No pressure. Just honest help.</p>
+            </form>
+            
+            <p style="font-size: 16px; color: #888;">
+                🔥 Remember: We're only taking 15 new listings per month. Spots fill fast.
+            </p>
+        </div>
+    </section>
+    
+    <script>
+    // Final CTA form submission
+    document.getElementById('final-cta-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('final-name').value;
+        const phone = document.getElementById('final-phone').value;
+        const submitButton = e.target.querySelector('button[type="submit"]');
+        
+        submitButton.textContent = 'Submitting...';
+        submitButton.disabled = true;
+        
+        try {
+            // Send to Supabase
+            const supabaseResponse = await fetch('https://fzlwkbhpsklsgkinwljt.supabase.co/rest/v1/sellers', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6bHdrYmhwc2tsc2draW53bGp0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIwNTE0MzEsImV4cCI6MjA4NzYyNzQzMX0.z0XDTy_IObxWiZ1iAyj2BHILuWM5u8XswckXVCzA0k8',
+                    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6bHdrYmhwc2tsc2draW53bGp0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIwNTE0MzEsImV4cCI6MjA4NzYyNzQzMX0.z0XDTy_IObxWiZ1iAyj2BHILuWM5u8XswckXVCzA0k8'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    phone: phone,
+                    source: '30DayListingStrategy.com (Final CTA)'
+                })
+            });
+            
+            // Send to Google Sheets
+            const sheetsResponse = await fetch('https://script.google.com/macros/s/AKfycbwdXX0AT7DsGMvOTcj_0s8hCuZ0g5m-4kjwSctMwbTAxJ1ms7X9Uad_QKQicv7RbKrh4Q/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    domain: '30DayListingStrategy.com',
+                    name: name,
+                    phone: phone,
+                    source: 'Final CTA Form'
+                })
+            });
+            
+            // Email to Brandon
+            await fetch('https://fzlwkbhpsklsgkinwljt.supabase.co/functions/v1/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    to: 'BrandonBLKGroup@Gmail.com',
+                    subject: '🔥 NEW 30 DAY LISTING LEAD (Final CTA)',
+                    text: `Name: ${name}\nPhone: ${phone}\nSource: 30DayListingStrategy.com (Final CTA Form)\n\nSubmitted: ${new Date().toLocaleString()}`
+                })
+            });
+            
+            alert('Thank you! We\'ll call you within 24 hours.');
+            e.target.reset();
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Something went wrong. Please call us directly at (479) 857-5994');
+        } finally {
+            submitButton.textContent = 'Get Your Free Marketing Plan';
+            submitButton.disabled = false;
+        }
+    });
+    </script>
+
+    <!-- Why Section -->
     <section class="why-section">
         <div class="why-container">
-            <h2>Why 30 Days?</h2>
+            <h2>Why Did Your House Not Sell?</h2>
             
             <div class="why-grid">
                 <div class="why-card">
-                    <h3>Homes Sell Fast (When Done Right)</h3>
-                    <p>The average home sells in 28-35 days. So why would you lock yourself into a 6-month contract? You shouldn't. We give you 30 days to see results.</p>
+                    <h3>No Real Strategy</h3>
+                    <p>They threw it on the MLS, crossed their fingers, and waited. That's not a strategy. That's hope. And hope doesn't sell houses.</p>
                 </div>
                 
                 <div class="why-card">
-                    <h3>No Long-Term Commitment</h3>
-                    <p>If we don't perform, you're free to go. No cancellation fees. No penalties. Just results or you walk.</p>
+                    <h3>No Real Marketing</h3>
+                    <p>A few photos and a yard sign? That's not marketing. We run targeted Facebook ads, Instagram campaigns, and mail 500+ postcards to neighbors who might know someone looking to move.</p>
                 </div>
                 
                 <div class="why-card">
-                    <h3>Real Marketing</h3>
-                    <p>We don't just throw your home on the MLS and hope. We run Facebook ads, Instagram campaigns, and mail 500+ postcards to neighbors. Real marketing gets real buyers.</p>
+                    <h3>6 Months Wasted</h3>
+                    <p>The average home sells in 28-35 days. So why did you sign a 180-day contract? Because it protects THEM, not you. We do 30 days. If we don't perform, you walk.</p>
                 </div>
             </div>
         </div>
@@ -580,13 +1076,16 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <p>The BLK Group at LPT Realty</p>
         <p>11324 Arcade Drive, #23, Little Rock, AR</p>
         <p style="margin-top: 20px; color: #666; font-size: 12px;">© 2026 The BLK Group. All rights reserved.</p>
     </footer>
 
+    <!-- Analytics Tracking -->
     <script>
+        // Track page view
         (async function() {
             try {
                 await fetch('https://fzlwkbhpsklsgkinwljt.supabase.co/rest/v1/page_views', {
@@ -598,7 +1097,7 @@
                         'Prefer': 'return=minimal'
                     },
                     body: JSON.stringify({
-                        domain: '30daylistingstrategy.com',
+                        domain: 'expiredlistingstrategy.com',
                         page: window.location.pathname + window.location.hash,
                         referrer: document.referrer || 'direct'
                     })
@@ -608,6 +1107,7 @@
             }
         })();
 
+        // Form submission
         document.getElementById('leadForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
@@ -628,7 +1128,7 @@
             submitButton.disabled = true;
             
             try {
-                const response = await fetch('https://fzlwkbhpsklsgkinwljt.supabase.co/rest/v1/thirty_day_leads', {
+                const response = await fetch('https://fzlwkbhpsklsgkinwljt.supabase.co/rest/v1/expired_listing_leads', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
