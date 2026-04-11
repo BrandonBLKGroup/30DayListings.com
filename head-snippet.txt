@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Didn't Sell? Give Us 30 Days | The BLK Group</title>
+    <meta name="description" content="Your listing expired? We'll sell it in 30 days or you walk away. No 6-month contract. 3% commission. 1000+ homes sold.">
+    <link rel="canonical" href="https://expiredlistingstrategy.com">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="House Didn't Sell? Give Us 30 Days | The BLK Group">
+    <meta property="og:description" content="Only taking 15 new listings per month. 30 days. 3% commission. No long-term contract.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://expiredlistingstrategy.com">
+    <meta property="og:image" content="https://expiredlistingstrategy.com/og-image.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            max-width: 100vw;
